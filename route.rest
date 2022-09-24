@@ -1,0 +1,129 @@
+GET http://localhost:3000/
+token: Njw862jbHS
+
+###
+
+POST http://localhost:3000/create
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "id": 1,
+    "name": "test"
+}
+
+### DEV
+
+PATCH http://localhost:3000/update/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "money": 5677
+}
+
+###
+
+GET http://localhost:3000/info/12
+token: Njw862jbHS
+
+###
+
+GET http://localhost:3000/crops/1
+token: Njw862jbHS
+
+###
+
+GET http://localhost:3000/fields/1
+token: Njw862jbHS
+
+###
+
+PUT http://localhost:3000/fields/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "action": "plant",
+    "cropId": 0,
+    "amount": 5
+}
+
+###
+
+PUT http://localhost:3000/fields/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "action": "harvest"
+}
+
+###
+
+GET http://localhost:3000/animalShelters/1
+token: Njw862jbHS
+
+###
+
+PUT http://localhost:3000/animalShelters/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "action": "feed",
+    "animalId": 0
+}
+
+###
+
+PUT http://localhost:3000/animalShelters/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "action": "collect"
+}
+
+###
+
+GET http://localhost:3000/shop/1
+token: Njw862jbHS
+
+###
+
+PUT http://localhost:3000/others/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "action": "buy",
+    "animalId": 0,
+    "amount": 10
+}
+
+###
+
+PUT http://localhost:3000/others/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "action": "sell",
+    "animalId": 0,
+    "amount": 10
+}
+###
+
+PUT http://localhost:3000/others/1
+Content-Type: application/json
+token: Njw862jbHS
+
+{
+    "action": "steal"
+}
+
+###
+
+GET http://localhost:3000/histories/1
+token: Njw862jbHS
